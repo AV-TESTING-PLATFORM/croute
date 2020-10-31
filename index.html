@@ -24,134 +24,82 @@
         </div>
         <div class="row">
             <div class="col-sm">
-                <img src="static/media/san_francisco_cut.png" alt="San Francisco Map" width="100%">
+                <img src="static/media/san_francisco_junction_location.png" alt="San Francisco Junction Map"
+                     width="100%">
             </div>
             <div class="col-sm">
-                <a href="https://content.lgsvlsimulator.com/maps/sanfrancisco/"><h5>San Francisco</h5></a>
-                <p>The map contains 91 junctions, including:</p>
+                <h5>San Francisco</h5>
+                <p>The map contains 84 valid signal controlled junctions.</p>
+                <p><b><i>CROUTE</i></b> extracts:</p>
                 <ul>
-                    <li>88 signal-controlled junctions</li>
-                    <li>3 stop-sign controlled junctions</li>
+                    <li>19 unique weak topology features</li>
+                    <li>76 unique route features</li>
                 </ul>
-                <p>In 88 signal-controlled junctions, there are</p>
+                <p>and generates: </p>
                 <ul>
-                    <li>819 junction lanes in total</li>
-                    <li>721 junction lanes intersected by other junction lanes</li>
+                    <li>29 junction groups in total</li>
+                    <li>22 junction groups selected for testing</li>
                 </ul>
-                <!--                <p>We set all traffic lights to <span style="color: green">GREEN</span> to simulate uncontrolled junctions.</p>-->
-                <p>From 721 junction lanes, <b><i>ATLAS</i></b> produces: </p>
-                <ul>
-                    <li>42 junction lane classes in total</li>
-                    <li>17 junction lane classes selected for testing</li>
-                </ul>
-                <p>As a result, <b><i>ATLAS</i></b> run testing on 17 junction lanes (one lane per selected class).</p>
-                <p>The details of junction lane classification are shown in table below.</p>
+                <p>The details of junction grouping are shown in table below.</p>
+                <small>Note that the san francisco map version is for Apollo 5.0.</small>
             </div>
         </div>
-        <div class="row flex-row justify-content-center mt-3">
-            <table class="table table-sm w-75">
-                <caption class="text-center">17 Selected Junction Lane Classes</caption>
-                <thead>
-                <tr>
-                    <th scope="col">Junction Lane Class</th>
-                    <th scope="col">Intersection Vector</th>
-                    <th scope="col">Number of Lanes</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">JLG--654</th>
-                    <td>2=>-4&emsp;2=>-3</td>
-                    <td>29</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--660</th>
-                    <td>4=>-2&emsp;4=>-3</td>
-                    <td>27</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--672</th>
-                    <td>6=>-2&emsp;6=>-4&emsp;3=>-5</td>
-                    <td>51</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--675</th>
-                    <td>2=>-6&emsp;2=>-5&emsp;2=>-3</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--678</th>
-                    <td>6=>-2&emsp;3=>-5&emsp;3=>-4</td>
-                    <td>19</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--682</th>
-                    <td>5=>-2&emsp;4=>-2&emsp;5=>-3</td>
-                    <td>17</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--684</th>
-                    <td>2=>-6&emsp;2=>-5&emsp;4=>-6</td>
-                    <td>32</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--737</th>
-                    <td>4=>-2&emsp;3=>-6&emsp;3=>-5</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--739</th>
-                    <td>4=>-2&emsp;6=>-3&emsp;4=>-5</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--742</th>
-                    <td>5=>-3&emsp;2=>-6&emsp;2=>-4</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--1062</th>
-                    <td>4=>-3&emsp;2=>-3</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--1066</th>
-                    <td>2=>-4&emsp;3=>-4</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--1067</th>
-                    <td>4=>-2&emsp;3=>-2</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--1132</th>
-                    <td>3=>-2&emsp;3=>-4</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--1430</th>
-                    <td>5=>-2&emsp;3=>-6&emsp;7=>-2&emsp;3=>-8&emsp;7=>-4</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--1431</th>
-                    <td>5=>-2&emsp;3=>-6&emsp;7=>-2&emsp;3=>-8&emsp;3=>-4</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <th scope="row">JLG--1432</th>
-                    <td>5=>-8&emsp;7=>-2&emsp;3=>-8&emsp;7=>-4&emsp;3=>-6</td>
-                    <td>12</td>
-                </tr>
-                </tbody>
-            </table>
+        <div class="row my-5">
+            <div class="col">
+                <img width="100%" src="static/media/san_francisco_junction_grouping.png"
+                     alt="San Francisco Junction Grouping Table">
+            </div>
         </div>
     </section>
 
     <section class="container">
         <div class="row">
-            <h2>JUNCTION LANE TOPOLOGY DIAGRAMS</h2>
+            <h2>JUNCTION GROUP TOPOLOGY DIAGRAMS</h2>
+        </div>
+        <div class="row flex-row junction-topology-diagram-container justify-content-center">
+            <img src="static/media/junction-modeling/topo-diagram-1.png" alt="Junction Topology Diagram 1">
+            <img src="static/media/junction-modeling/topo-diagram-2.png" alt="Junction Topology Diagram 2">
+            <img src="static/media/junction-modeling/topo-diagram-3.png" alt="Junction Topology Diagram 3">
+            <img src="static/media/junction-modeling/topo-diagram-4.png" alt="Junction Topology Diagram 4">
+            <img src="static/media/junction-modeling/topo-diagram-5.png" alt="Junction Topology Diagram 5">
+            <img src="static/media/junction-modeling/topo-diagram-6.png" alt="Junction Topology Diagram 6">
+            <img src="static/media/junction-modeling/topo-diagram-7.png" alt="Junction Topology Diagram 7">
+        </div>
+
+        <div class="row">
+            <h2>ROUTE FEATURE DIAGRAMS</h2>
+        </div>
+        <div class="row flex-row route-feature-diagram-container justify-content-center">
+            <img src="static/media/junction-modeling/env_key_forward_forward.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_forward_left_1.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_forward_left_2.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_forward_left_3.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_forward_right_1.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_forward_right_2.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_forward_right_3.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_left_1_forward.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_left_1_left_1.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_left_1_left_2.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_left_1_right_1.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_left_1_right_2.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_left_1_right_3.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_left_2_forward.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_left_2_left_1.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_left_3_left_1.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_left_3_right_2.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_left_3_right_3.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_right_1_forward.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_right_1_left_1.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_right_1_left_2.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_right_1_left_3.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_right_1_right_1.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_right_1_right_2.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_right_2_forward.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_right_2_left_3.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_right_3_left_1.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_right_2_right_1.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_right_3_left_2.png" alt=""/>
+            <img src="static/media/junction-modeling/env_key_right_3_left_3.png" alt=""/>
         </div>
     </section>
 
