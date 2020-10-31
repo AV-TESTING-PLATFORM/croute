@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="libs/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid text-center image-title">
+        <div class="title-background"></div>
+        <div class="title-background-overlay"></div>
+        <div class="container title-content">
+            <h1 class="display-1">CROUTE</h1>
+            <p class="lead">Route Coverage Testing For Autonomous Vehicles via Map Modeling</p>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="row">
+            <h2>MAP MODELING</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img src="static/media/san_francisco_cut.png" alt="San Francisco Map" width="100%">
+            </div>
+            <div class="col-sm">
+                <a href="https://content.lgsvlsimulator.com/maps/sanfrancisco/"><h5>San Francisco</h5></a>
+                <p>The map contains 91 junctions, including:</p>
+                <ul>
+                    <li>88 signal-controlled junctions</li>
+                    <li>3 stop-sign controlled junctions</li>
+                </ul>
+                <p>In 88 signal-controlled junctions, there are</p>
+                <ul>
+                    <li>819 junction lanes in total</li>
+                    <li>721 junction lanes intersected by other junction lanes</li>
+                </ul>
+                <!--                <p>We set all traffic lights to <span style="color: green">GREEN</span> to simulate uncontrolled junctions.</p>-->
+                <p>From 721 junction lanes, <b><i>ATLAS</i></b> produces: </p>
+                <ul>
+                    <li>42 junction lane classes in total</li>
+                    <li>17 junction lane classes selected for testing</li>
+                </ul>
+                <p>As a result, <b><i>ATLAS</i></b> run testing on 17 junction lanes (one lane per selected class).</p>
+                <p>The details of junction lane classification are shown in table below.</p>
+            </div>
+        </div>
+        <div class="row flex-row justify-content-center mt-3">
+            <table class="table table-sm w-75">
+                <caption class="text-center">17 Selected Junction Lane Classes</caption>
+                <thead>
+                <tr>
+                    <th scope="col">Junction Lane Class</th>
+                    <th scope="col">Intersection Vector</th>
+                    <th scope="col">Number of Lanes</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">JLG--654</th>
+                    <td>2=>-4&emsp;2=>-3</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--660</th>
+                    <td>4=>-2&emsp;4=>-3</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--672</th>
+                    <td>6=>-2&emsp;6=>-4&emsp;3=>-5</td>
+                    <td>51</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--675</th>
+                    <td>2=>-6&emsp;2=>-5&emsp;2=>-3</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--678</th>
+                    <td>6=>-2&emsp;3=>-5&emsp;3=>-4</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--682</th>
+                    <td>5=>-2&emsp;4=>-2&emsp;5=>-3</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--684</th>
+                    <td>2=>-6&emsp;2=>-5&emsp;4=>-6</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--737</th>
+                    <td>4=>-2&emsp;3=>-6&emsp;3=>-5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--739</th>
+                    <td>4=>-2&emsp;6=>-3&emsp;4=>-5</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--742</th>
+                    <td>5=>-3&emsp;2=>-6&emsp;2=>-4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--1062</th>
+                    <td>4=>-3&emsp;2=>-3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--1066</th>
+                    <td>2=>-4&emsp;3=>-4</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--1067</th>
+                    <td>4=>-2&emsp;3=>-2</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--1132</th>
+                    <td>3=>-2&emsp;3=>-4</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--1430</th>
+                    <td>5=>-2&emsp;3=>-6&emsp;7=>-2&emsp;3=>-8&emsp;7=>-4</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--1431</th>
+                    <td>5=>-2&emsp;3=>-6&emsp;7=>-2&emsp;3=>-8&emsp;3=>-4</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th scope="row">JLG--1432</th>
+                    <td>5=>-8&emsp;7=>-2&emsp;3=>-8&emsp;7=>-4&emsp;3=>-6</td>
+                    <td>12</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <h2>JUNCTION LANE TOPOLOGY DIAGRAMS</h2>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <h2>ISSUES DISCOVERED</h2>
+        </div>
+    </section>
+</div>
+
+
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
+<script src="libs/bootstrap-4.5.3-dist/js/http_code.jquery.com_jquery-3.5.1.slim.js"></script>
+<script src="libs/bootstrap-4.5.3-dist/js/http_cdn.jsdelivr.net_npm_popper.js@1.16.1_dist_umd_popper.js"></script>
+<script src="libs/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="static/js/index.js"></script>
+</body>
+</html>
