@@ -29,7 +29,7 @@
             </div>
             <div class="col-sm">
                 <h5>San Francisco</h5>
-                <p>The map contains 84 valid signal controlled junctions.</p>
+                <p>The map contains 84 valid junctions.</p>
                 <p><b><i>CROUTE</i></b> extracts:</p>
                 <ul>
                     <li>19 unique weak topology features</li>
@@ -106,6 +106,87 @@
     <section class="container">
         <div class="row">
             <h2>ISSUES DISCOVERED</h2>
+        </div>
+        <div class="media">
+            <video width="50%" controls class="align-self-center mr-3">
+                <source src="static/media/issue-videos/insufficient-distance-for-continual-lane-changing.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="media-body">
+                <h5 class="mt-0">Insufficient Distance for Continual Lane Changing</h5>
+                <p>Apollo requires a long distance for lane changing (at least about
+                    50 meters from our experimental discovery), which sometimes
+                    is too conservative, resulting in a big detour or even
+                    incompleteness of a motion task.</p>
+            </div>
+        </div>
+        <div class="media">
+            <video width="50%" controls class="align-self-center mr-3">
+                <source src="static/media/issue-videos/inefficient-routing.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="media-body">
+                <h5 class="mt-0">Inefficient Routing</h5>
+                <p>The default configurations for
+                    Apollo’s routing algorithm (i.e., A*) prefer to avoid
+                    changing lanes before entering a junction even if there are
+                    sufficient distance for continual lane changing, resulting
+                    in a big detour without any lane changing.</p>
+            </div>
+        </div>
+        <div class="media">
+            <video width="50%" controls class="align-self-center mr-3">
+                <source src="static/media/issue-videos/stuck-at-stop-sign.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="media-body">
+                <h5 class="mt-0">Stuck Motion at Stop Signs</h5>
+                <p>When Apollo passes a junction
+                    controlled by stop signs, it stops before the white
+                    stopping line and never moves again.</p>
+            </div>
+        </div>
+        <div class="media">
+            <video width="50%" controls class="align-self-center mr-3">
+                <source src="static/media/issue-videos/insufficient-rerouting.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="media-body">
+                <h5 class="mt-0">Insufficient Rerouting</h5>
+                <p>When there are obstacles ahead,
+                    Apollo always performs overtaking, rather than executing
+                    lane changing and re-routing a new route. It will result in
+                    long-distance motion along the boundary of two adjacent
+                    lanes or lane changing in a junction.</p>
+            </div>
+        </div>
+        <div class="media">
+            <video width="50%" controls class="align-self-center mr-3">
+                <source src="static/media/issue-videos/lane-gap.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="media-body">
+                <h5 class="mt-0">Lane Gap</h5>
+                <p>Apollo has a default configuration to define
+                    the maximal width of a lane. When a lane’s width is
+                    larger than this configuration, Apollo cannot recognize
+                    the actual width but increase the gap with the adjacent
+                    lane. Hence, Apollo can plan a feasible route but cannot
+                    perform a successful lane changing (e.g., terminating lane
+                    changing halfway and turning back to the original one).</p>
+            </div>
+        </div>
+        <div class="media">
+            <video width="50%" controls class="align-self-center mr-3">
+                <source src="static/media/issue-videos/curb-mismatch.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="media-body">
+                <h5 class="mt-0">Map Errors</h5>
+                <p>Since the HD maps are constructed manually,
+                    different errors, such as location mismatch of curbs and
+                    disordered points forming a lane, are present.</p>
+            </div>
         </div>
     </section>
 </div>
