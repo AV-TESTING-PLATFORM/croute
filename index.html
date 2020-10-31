@@ -121,7 +121,7 @@
             <h2>ISSUES DISCOVERED</h2>
         </div>
         <div class="media">
-            <video width="50%" controls class="align-self-center mr-3">
+            <video width="50%" controls class="align-self-start mr-3">
                 <source src="static/media/issue-videos/insufficient-distance-for-continual-lane-changing.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -134,21 +134,39 @@
             </div>
         </div>
         <div class="media">
-            <video width="50%" controls class="align-self-center mr-3">
+            <video width="50%" controls class="align-self-start mr-3">
                 <source src="static/media/issue-videos/inefficient-routing.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="media-body">
                 <h5 class="mt-0">Inefficient Routing</h5>
-                <p>The default configurations for
-                    Apollo’s routing algorithm (i.e., A*) prefer to avoid
-                    changing lanes before entering a junction even if there are
-                    sufficient distance for continual lane changing, resulting
-                    in a big detour without any lane changing.</p>
+                <div class="row">
+                    <div class="col">
+                        <p>The default configurations for
+                            Apollo’s routing algorithm (i.e., A*) prefer to avoid
+                            changing lanes before entering a junction even if there are
+                            sufficient distance for continual lane changing, resulting
+                            in a big detour without any lane changing.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <small class="text-center">Expected Routing</small>
+                        <img style="height: 8rem; margin:1rem;"
+                             src="static/media/issue-videos/inefficient-routing-expectation.svg"
+                             alt="Expected Routing Result">
+                    </div>
+                    <div class="col">
+                        <small class="text-center">Real Routing</small>
+                        <img style="height: 8rem; margin:1rem;"
+                             src="static/media/issue-videos/inefficient-routing-reality.svg"
+                             alt="Real Routing">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="media">
-            <video width="50%" controls class="align-self-center mr-3">
+            <video width="50%" controls class="align-self-start mr-3">
                 <source src="static/media/issue-videos/stuck-at-stop-sign.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -160,7 +178,7 @@
             </div>
         </div>
         <div class="media">
-            <video width="50%" controls class="align-self-center mr-3">
+            <video width="50%" controls class="align-self-start mr-3">
                 <source src="static/media/issue-videos/insufficient-rerouting.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -174,7 +192,7 @@
             </div>
         </div>
         <div class="media">
-            <video width="50%" controls class="align-self-center mr-3">
+            <video width="50%" controls class="align-self-start mr-3">
                 <source src="static/media/issue-videos/lane-gap.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -190,7 +208,7 @@
             </div>
         </div>
         <div class="media">
-            <video width="50%" controls class="align-self-center mr-3">
+            <video width="50%" controls class="align-self-start mr-3">
                 <source src="static/media/issue-videos/curb-mismatch.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
