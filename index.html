@@ -121,10 +121,31 @@
             <h2>ISSUES DISCOVERED</h2>
         </div>
         <div class="media">
-            <video width="50%" controls class="align-self-start mr-3">
-                <source src="static/media/issue-videos/insufficient-distance-for-continual-lane-changing.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="row w-50 mr-3 ml-0">
+                <video style="width: 100%;" controls class="align-self-start mr-3">
+                    <source src="static/media/issue-videos/insufficient-distance-for-continual-lane-changing.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="row">
+                    <div class="col pt-3">
+                        <small>Expected Path</small>
+                    </div>
+                    <div class="col">
+                        <img style="height: 8rem; margin:1rem;"
+                             src="static/media/issue-videos/insufficient-distance-lane-change.svg"
+                             alt="Expected Path">
+                    </div>
+                    <div class="col pt-3">
+                        <small>Actual Path</small>
+                    </div>
+                    <div class="col">
+                        <img style="height: 8rem; margin:1rem;"
+                             src="static/media/issue-videos/insufficient-distance-lane-change-reality.svg"
+                             alt="Actual Path">
+                    </div>
+                </div>
+            </div>
+
             <div class="media-body">
                 <h5 class="mt-0">Insufficient Distance for Continual Lane Changing</h5>
                 <p>Apollo requires a long distance for lane changing (at least about
@@ -138,10 +159,31 @@
             </div>
         </div>
         <div class="media">
-            <video width="50%" controls class="align-self-start mr-3">
-                <source src="static/media/issue-videos/inefficient-routing.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="row w-50 mr-3 ml-0">
+                <video style="width: 100%;" controls class="align-self-start mr-3">
+                    <source src="static/media/issue-videos/inefficient-routing.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="row">
+                    <div class="col pt-3">
+                    <small>Expected Routing</small>
+                    </div>
+                    <div class="col">
+                        <img style="height: 8rem; margin:1rem;"
+                             src="static/media/issue-videos/inefficient-routing-expectation.svg"
+                             alt="Expected Routing Result">
+                    </div>
+                    <div class="col pt-3">
+                    <small>Apollo Routing</small>
+                    </div>
+                    <div class="col">
+                        <img style="height: 8rem; margin:1rem;"
+                             src="static/media/issue-videos/inefficient-routing-reality.svg"
+                             alt="Real Routing">
+                    </div>
+                </div>
+            </div>
+
             <div class="media-body">
                 <h5 class="mt-0">Inefficient Routing</h5>
                 <div class="row">
@@ -155,20 +197,6 @@
                             perform three continuous lane changing to the left to reach the destination as shown in the left diagram.
                         However, Apollo's routing module assigns high cost to lane changing actions during optimal route searching,
                             which resulted in a big circle involving additional three junctions, as shown in the right diagram.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <small class="text-center">Expected Routing</small>
-                        <img style="height: 8rem; margin:1rem;"
-                             src="static/media/issue-videos/inefficient-routing-expectation.svg"
-                             alt="Expected Routing Result">
-                    </div>
-                    <div class="col">
-                        <small class="text-center">Apollo Routing</small>
-                        <img style="height: 8rem; margin:1rem;"
-                             src="static/media/issue-videos/inefficient-routing-reality.svg"
-                             alt="Real Routing">
                     </div>
                 </div>
             </div>
