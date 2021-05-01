@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VF3RKNHM7C"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-VF3RKNHM7C');
-    </script>
-
     <meta charset="UTF-8">
     <title>CROUTE</title>
     <link rel="stylesheet" href="libs/bootstrap-4.5.3-dist/css/bootstrap.min.css">
@@ -133,7 +123,8 @@
         <div class="media">
             <div class="row w-50 mr-3 ml-0">
                 <video style="width: 100%;" controls class="align-self-start mr-3">
-                    <source src="static/media/issue-videos/insufficient-distance-for-continual-lane-changing.mp4" type="video/mp4">
+                    <source src="static/media/issue-videos/insufficient-distance-for-continual-lane-changing.mp4"
+                            type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <div class="row">
@@ -162,7 +153,8 @@
                     50 meters from our experimental discovery), which sometimes
                     is too conservative, resulting in a big detour or even
                     incompleteness of a motion task.</p>
-                <p>In the video, Apollo is expected to perform one lane changing to the right and turn right in the junction.
+                <p>In the video, Apollo is expected to perform one lane changing to the right and turn right in the
+                    junction.
                     Although it's routing module computes a correct route (red lines on the map),
                     Apollo's planning and control module fail to complete the lane changing before entering the junction
                     and eventually results in a re-routing within junction.</p>
@@ -179,7 +171,7 @@
                 </video>
                 <div class="row">
                     <div class="col pt-3">
-                    <small>Expected Routing</small>
+                        <small>Expected Routing</small>
                     </div>
                     <div class="col">
                         <img style="height: 8rem; margin:1rem;"
@@ -187,7 +179,7 @@
                              alt="Expected Routing Result">
                     </div>
                     <div class="col pt-3">
-                    <small>Apollo Routing</small>
+                        <small>Apollo Routing</small>
                     </div>
                     <div class="col">
                         <img style="height: 8rem; margin:1rem;"
@@ -207,9 +199,12 @@
                             sufficient distance for continual lane changing, resulting
                             in a big detour without any lane changing.</p>
                         <p>In the video, Apollo is expected to turn right in the junction and
-                            perform three continuous lane changing to the left to reach the destination as shown in the left diagram.
-                        However, Apollo's routing module assigns high cost to lane changing actions during optimal route searching,
-                            which resulted in a big circle involving additional three junctions, as shown in the right diagram.</p>
+                            perform three continuous lane changing to the left to reach the destination as shown in the
+                            left diagram.
+                            However, Apollo's routing module assigns high cost to lane changing actions during optimal
+                            route searching,
+                            which resulted in a big circle involving additional three junctions, as shown in the right
+                            diagram.</p>
                     </div>
                 </div>
             </div>
@@ -225,9 +220,11 @@
                     controlled by stop signs, it stops before the white
                     stopping line and never moves again.</p>
                 <p>In the video, Apollo stops behind the stop line at the stop-sign controlled junction.
-                    It is expected to surge forward while checking obstacles from both left and right side, before crossing.
-                Internally Apollo uses "<b>scenario</b>" manager to complete such action flow.
-                    However, when scenario manager fails, it cannot switch from "<b>scenario: stop before stop line</b>" to "scenario: surge forward",
+                    It is expected to surge forward while checking obstacles from both left and right side, before
+                    crossing.
+                    Internally Apollo uses "<b>scenario</b>" manager to complete such action flow.
+                    However, when scenario manager fails, it cannot switch from "<b>scenario: stop before stop line</b>"
+                    to "scenario: surge forward",
                     which makes Apollo to stop forever.</p>
             </div>
         </div>
@@ -246,8 +243,10 @@
                 <p>In the video, Apollo is expected to drive forward across the junction
                     then perform three continuous lane changing to the left.
                     When it detects that starting lane is blocked by obstacles,
-                    it is expected to re-route, starting with a lane change to the left and followed by two continuous lane changing after junction.
-                Instead, Apollo keeps trying to overtake the obstacles, driving on the lane boundaries and eventually performed a lane change within the junction.</p>
+                    it is expected to re-route, starting with a lane change to the left and followed by two continuous
+                    lane changing after junction.
+                    Instead, Apollo keeps trying to overtake the obstacles, driving on the lane boundaries and
+                    eventually performed a lane change within the junction.</p>
             </div>
         </div>
         <div class="media">
@@ -264,8 +263,9 @@
                     lane. Hence, Apollo can plan a feasible route but cannot
                     perform a successful lane changing (e.g., terminating lane
                     changing halfway and turning back to the original one).</p>
-                <p>In the video, Apollo is expected to turn right in the junction and perform a lane changing to right afterwards.
-                However, due to the increasing lane gap between the two adjacent lanes after the junction,
+                <p>In the video, Apollo is expected to turn right in the junction and perform a lane changing to right
+                    afterwards.
+                    However, due to the increasing lane gap between the two adjacent lanes after the junction,
                     Apollo fails to complete the lane change and reverts back, thus unable to reach the destination.</p>
             </div>
         </div>
@@ -281,7 +281,7 @@
                     disordered points forming a lane, are present.</p>
                 <p>In the video, there is a clear mismatch on the junction boundary.
                     Apollo has planned a valid trajectory based on the HD map, with a small gap from the curb.
-                In simulator, however, Apollo's 3D model collides with the curb and cannot drive forward.</p>
+                    In simulator, however, Apollo's 3D model collides with the curb and cannot drive forward.</p>
             </div>
         </div>
     </section>
